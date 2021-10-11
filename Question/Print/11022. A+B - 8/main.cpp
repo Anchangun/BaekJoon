@@ -7,5 +7,4 @@ int main() {
 
 	sol.fn_run(num_size);
 
-
 }
