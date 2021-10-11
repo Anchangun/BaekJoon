@@ -7,5 +7,4 @@ int main() {
 	std::cin >> target;
 	sol.fn_run(num_size,target);
 
-
 }
