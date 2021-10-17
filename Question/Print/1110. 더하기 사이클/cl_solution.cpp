@@ -18,5 +18,5 @@ int cl_solution::fn_run(int num){
 		return cnt;
 	}
 	
-	return 0;
+	return -1;
 }
