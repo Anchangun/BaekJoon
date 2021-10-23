@@ -1,8 +1,10 @@
 #include "cl_solution.hpp"
 
 void cl_solution::fn_run(int num){
+	std::ios_base::sync_with_stdio(false); 
+	std::cin.tie(NULL);
 	int i = 0, j = 0, user_data_size = 0, sum = 0, result_cnt= 0 ;
-	double avg=0, result=0;
+	double avg=0;
 
 	while (i < num) {
 		std::cin >> user_data_size;
@@ -28,7 +30,7 @@ void cl_solution::fn_run(int num){
 			std::cout.precision(3);
 			std::cout << ((double)result_cnt / (double)user_data_size) * 100 <<"%\n";
 
-			sum=result_cnt=j= sum = 0;
+			result_cnt=j= sum = 0;
 			avg = 0;
 			delete arr_data;
 			i++;
