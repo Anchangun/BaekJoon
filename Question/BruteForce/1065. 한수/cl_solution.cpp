@@ -1,8 +1,7 @@
 #include "cl_solution.hpp"
 
 bool cl_solution::fn_arithmetic_progression(int num){
-	int first_num=0 ,second_num = 0;
-	int old_difference =0,difference_num = 0;
+	int first_num=0 ,second_num = 0, old_difference =0,difference_num = 0;
 	bool check=false;
 	if (num < 100) {
 		return true;
