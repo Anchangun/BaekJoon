@@ -1,4 +1,4 @@
-# BackJoon
+# BaekJoon
 
 Site : https://www.acmicpc.net/
 
