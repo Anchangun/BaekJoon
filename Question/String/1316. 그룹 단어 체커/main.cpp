@@ -1,6 +1,7 @@
 #include"cl_solution.hpp"
 
 int main() {
+
 	cl_solution sol;
 	int user_data;
 	std::cin >> user_data;
