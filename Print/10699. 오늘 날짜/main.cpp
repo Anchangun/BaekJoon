@@ -10,7 +10,7 @@ int main() {
     int month = localTime->tm_mon + 1;
     int day = localTime->tm_mday;
 
-    std::cout << year << "-" << std::setw(2) << std::setfill('0') << month << "-" << std::setw(2) << std::setfill('0') << day << std::endl;
+    std::cout << year << "-" << std::setw(2) << std::setfill('0') << month << "-" << std::setw(2) << std::setfill('0') << day;
 
     return 0;
 }
