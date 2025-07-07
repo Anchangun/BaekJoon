@@ -17,3 +17,5 @@ Print/15680. 연세대학교/15680. 연세대학교/x64/Debug/vc143.pdb
 *.ilk
 *.log
 *.obj
+.idea/
+*.exe
