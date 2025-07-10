@@ -1,7 +1,4 @@
-Print/15680. 연세대학교/x64/Debug/15680. 연세대학교.exe
-Print/15680. 연세대학교/x64/Debug/15680. 연세대학교.pdb
 *.tlog
-Print/15680. 연세대학교/15680. 연세대학교/x64/Debug/vc143.pdb
 *.idb
 *.db-wal
 *.db
@@ -19,3 +16,4 @@ Print/15680. 연세대학교/15680. 연세대학교/x64/Debug/vc143.pdb
 *.obj
 .idea/
 *.exe
+Stack/17608. 막대기/cmake-build-debug/
