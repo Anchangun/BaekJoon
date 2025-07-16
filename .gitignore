@@ -1,0 +1,12 @@
+.idea/
+*.ninja_deps
+*.ninja_log
+*.exe
+*.ninja
+*.cmake
+*.txt
+*.json
+*.check_cache
+*.yaml
+*.obj
+*.bin
