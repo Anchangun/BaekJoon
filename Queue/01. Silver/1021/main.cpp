@@ -1,4 +1,3 @@
-
 #include<iostream>
 #include <algorithm>
 #include <deque>
@@ -20,15 +19,17 @@ std::deque<int> data_erase(int target,std::deque<int> q,bool dir) {
         }
     }
     else {
-        for (int i=q.size();i>0;i--) {
-            int temp = q.back();
+        for (int i=q.size(); i>0; i--) {
+            int temp = q.front(); 
             if (temp == target) {
-                q.pop_back();
+                q.pop_front();
                 break;
             }
             else {
+                // 오른쪽 회전: 뒤의 것을 앞으로 이동
+                int back_val = q.back();
                 q.pop_back();
-                q.push_front(temp);
+                q.push_front(back_val);
             }
         }
     }
@@ -43,15 +44,13 @@ int rotating_queue(int M,std::deque<int> q){
         auto it = std::find(q.begin(),q.end(),temp);
         if(it != q.end()) {
             int index = std::distance(q.begin(),it);
-            if (q.size()/2 >=index) {
+            if (q.size()/2 >= index) {
                 result += index;
                 q = data_erase(*it,q,true);
-
             }
             else {
                 result += (q.size()-index);
                 q = data_erase(*it,q,false);
-
             }
         }
     }
@@ -67,10 +66,10 @@ int main() {
     [&]() {
         while (N < MIN_N || N > MAX_N) {
             std::cin>> N >> M;
-            if (M>N || M <0)
-                N=0;
+            if (M > N || M < 0)
+                N = 0;
         }
-        for (int i =0 ; i < N; i++) {
+        for (int i = 0 ; i < N; i++) {
             center.push_back(i+1);
         }
     }();
