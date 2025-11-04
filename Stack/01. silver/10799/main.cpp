@@ -1,34 +1,33 @@
-#include<iostream>
-
-#define MAX_N 100000
+#include <bits/stdc++.h>
 #define LEFT '('
 #define RIGHT ')'
 
-int solution(std::stack<char>& stick, const std::string& S){
+int solution(std::stack<char>& stick, const std::string& S) {
     int count = 0;
-    for(int i=0;i<S.length();i++){
-        if(S[i] == LEFT){
-            stick.push(S[i]);
+    for (int i = 0; i < (int)S.length(); ++i) {
+        if (S[i] == LEFT) {
+            stick.push(LEFT);
         }
-        else{
-            if(stick.empty()){
-                break;
-            }
-            else{
-                count++;
-                stick.pop();
+        else {
+            stick.pop();
+            if (S[i - 1] == LEFT) {
+                count += stick.size();
+            } else {
+                count += 1;
             }
         }
     }
     return count;
 }
 
-int main(){
+int main() {
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
+
     std::string S;
-    int N =0;
     std::stack<char> stick;
     std::cin >> S;
-    std::cout << solution(stick, S);
 
+    std::cout << solution(stick, S);
     return 0;
 }
